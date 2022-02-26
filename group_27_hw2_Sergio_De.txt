@@ -36,7 +36,7 @@ i
 		"name":"Dergachev Sergey",
 		"age":34,
 		"home pets":"no",
-		"future desire salary":700"$"
+		"future desire salary":"700$"
 }
 esc
 :wq
@@ -55,7 +55,7 @@ i
 	"favorite serial":"brassic",
 	"favorite food":"sushi",
 	"favorite time of the year":"summer",
-	"country i would like to visit":"London"
+	"country i would like to visit":"Great Britain"
 }
 
 esc
@@ -105,7 +105,7 @@ XML
  2. Клонировать репозиторий XML на локальный компьютер.
 нажать Code выбрать пункт Https
 далее скопировать ссылку,зайти в папку,куда будет скопирован репозиторий
-git clone +ссылка вводим в терминале
+git clone https://github.com/Korjanski/XML.git
 
  3. Внутри локального XML создать файл “new.xml”.
 git touch new.xml
@@ -127,10 +127,13 @@ git push
 vim new.xml
 i
 
-		<name>Dergachev Sergey</name>
+		<?xml version="1.0" encoding="UTF-8"?>
+       <about_me>
+                <name>Dergachev Sergey</name>
 		<age>34</age>
-		<home pets>no</home pets>
-		<future desire salary>700$</future desire salary>
+		<home_pets>no</home_pets>
+		<future_desire_salary>700$</future_desire_salary>
+      </about_me>
 esc
 :wq
 
@@ -144,11 +147,14 @@ touch preference.xml
  10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
    vim preferences.xml
    i
-     <favorite movie>pulp fiction</favorite movie>
-	<favorite serial>brassic</favorite serial>
-	<favorite food>sushi</favorite food>
-	<favorite time of the year>summer</favorite time of the year>
-	<country i would like to visit>London</country i would like to visit>
+     <?xml version="1.0" encoding="UTF-8"?>
+<preference>
+        <favorite_movie>pulp fiction</favorite_movie>
+	<favorite_serial>brassic</favorite_serial>
+	<favorite_food>sushi</favorite_food>
+	<favorite_time_of_the_year>summer</favorite_time_of_the_year>
+	<country_i_would_like_to_visit>Great Britain</country_i_would_like_to_visit>
+</preference>
 esc
 :wq
 
@@ -160,7 +166,7 @@ Enter
 Ctrl+D
 
  12. Сделать коммит в одну строку.
- git add .;git commit -m"add skills.json,preference.json"
+ git add .;git commit -m"add skills.xml,preference.xml"
 
  13. Отправить сразу 2 файла на внешний репозиторий.
  git push
@@ -238,7 +244,7 @@ touch preference.txt
 	favorite serial:brassic,
 	favorite food:sushi,
 	favorite time of the year:summer,
-	country i would like to visit":London
+	country i would like to visit":Great Britain
 
  11. Создать файл sklls.txt добавить информацию о скиллах которые будут изучены на курсе в формате TXT
 cat>skills.txt
