@@ -12,7 +12,7 @@ JSON
  2. Клонировать репозиторий JSON на локальный компьютер.
 нажать Code выбрать пункт Https
 далее скопировать ссылку,зайти в папку,куда будет скопирован репозиторий
-git clone +ссылка вводим в терминале
+git clone https://github.com/Korjanski/JSON.git
 
  3. Внутри локального JSON создать файл “new.json”.
 git touch new.json
@@ -41,23 +41,27 @@ i
 esc
 :wq
  8. Отправить изменения на внешний репозиторий.
-git add new.json
-git commit -m "changed new.json"
+
+git commit -am "changed new.json"
 git push
 
  9. Создать файл preferences.json
-cat>preference.json
+touch preference.json
 
  10. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim prefenrence.json
+i
 {	"favorite movie":"pulp fiction",
 	"favorite serial":"brassic",
 	"favorite food":"sushi",
 	"favorite time of the year":"summer",
 	"country i would like to visit":"London"
 }
-enter
-Ctrl+D
- 11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+
+esc
+:wq
+ 
+11. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
 cat>skills.json
 {"skills":["json","xml","txt","github","gitbash"]}
 
@@ -131,17 +135,22 @@ esc
 :wq
 
  8. Отправить изменения на внешний репозиторий.
-git add new.xml
+git commit -am new.xml
+git push
 
  9. Создать файл preferences.xml
-cat>preference.xml
+touch preference.xml
 
  10. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
-        <favorite movie>pulp fiction</favorite movie>
+   vim preferences.xml
+   i
+     <favorite movie>pulp fiction</favorite movie>
 	<favorite serial>brassic</favorite serial>
 	<favorite food>sushi</favorite food>
 	<favorite time of the year>summer</favorite time of the year>
 	<country i would like to visit>London</country i would like to visit>
+esc
+:wq
 
  11. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
 cat>skills.xml
@@ -219,8 +228,8 @@ esc
 :wq
 
  8. Отправить изменения на внешний репозиторий.
-git add new.txt
-git commit -m "changed new.txt"
+
+git commit -am "changed new.txt"
 git push
 
  9. Создать файл preferences.txt
