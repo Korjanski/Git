@@ -1,19 +1,19 @@
-GitHub. HW_2
+### GitHub. HW_2
 1. На локальном репозитории сделать ветки для:
 - Postman
- git branch Postman
+ `git branch Postman`
 - Jmeter
- git branch Jmeter
+ `git branch Jmeter`
 - CheckLists
- git branch Checklists
+ `git branch Checklists`
 - Bug Reports
- git branch BugReports
+ `git branch BugReports`
 - SQL
- git branch SQL
+ `git branch SQL`
 - Charles
- git branch Charles
+ `git branch Charles`
 - Mobile testing
- git branch MobileTesting
+ `git branch MobileTesting`
 
 2. Запушить все ветки на внешний репозиторий
  git push -u origin --all
