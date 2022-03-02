@@ -47,4 +47,5 @@ i
 
 10. Синхронизировать Внешнюю и Локальную ветки Main
  git checkout main
- git pull# Git-Branch
+ git pull 
+ 
