@@ -21,12 +21,12 @@
 3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
  `git checkout BugReports`
  `vim BugReports.txt`
-`i` 
+`i`
+`esc` 
 `:wq`
 
 4. Запушить структуру багрепорта на внешний репозиторий
- `git commit -am "new"`
- `git push`
+ `git add .;git commit -m "new" ;git push`
 
 5. Вмержить ветку Bag Reports в Main
  `git checkout main`
@@ -38,6 +38,9 @@
 7. В ветке CheckLists набросать структуру чек листа.
  `git checkout CheckLists`
  `vim CheckLists.txt`
+ `i`
+ `esc`
+ `:wq`
 
 8. Запушить структуру на внешний репозиторий
  `git add .;git commit -m "new" ;git push`
