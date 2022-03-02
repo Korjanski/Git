@@ -21,12 +21,15 @@ GitHub. HW_2
 3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
  git checkout BugReports
  vim BugReports.txt
- git commit -m "BugReports"
+i 
+:wq
 
 4. Запушить структуру багрепорта на внешний репозиторий
+ git commit -am "new"
  git push
 
 5. Вмержить ветку Bag Reports в Main
+ git checkout main
  git merge BugReports
 
 6. Запушить main на внешний репозиторий.
