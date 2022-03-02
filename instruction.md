@@ -1,4 +1,4 @@
-GitHub. HW_2
+### GitHub. HW_2
 1. На локальном репозитории сделать ветки для:
 - Postman
  `git branch Postman`
